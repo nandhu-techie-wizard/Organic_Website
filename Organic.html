@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>orgnic</title>
+    <!-- <link rel="stylesheets" href="style.css"> -->
+    <style>
+        #logo{   
+            background-image:linear-gradient(rgba(225, 235, 245, 0.826),rgba(198, 235, 249, 0.437));
+            padding-left: 15%;
+        }
+        #menu{
+            width: 50px;
+            height: 50px;
+            background-image:linear-gradient(rgba(162, 202, 241, 0.826),rgba(198, 235, 249, 0.437));
+            text-align: center;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #menu2{
+            width: 20px;
+            margin-top: 15px;
+        }
+        .banner1{
+            margin-top:-25px;
+            background-image:linear-gradient(rgba(227, 239, 251,0.97),rgba(209, 220, 224,0.97));
+            background-size: cover;
+            background-repeat: no-repeat;
+            height:90vh;
+            z-index:1;
+        }
+        .bimage{
+           
+            background-image:url(banner.jpg);
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            background-position-x: 75%;
+            background-position-y:51%;
+            height: 90vh; 
+            z-index:-1;
+        }
+        #p1{
+            font-weight: bold;
+            color: green;
+            font-size: xx-large;
+            padding-top: 250px;
+            padding-left: 300px;
+            margin-left: 50px;
+        }
+        .bimage h1{
+            font-family: 'Dancing Script', cursive;
+            font-size: 120px;
+            color: orangered;
+            margin-left: 190px;
+            margin-top: -75px;
+        }
+        #p2{
+            margin-left: 190px;
+            margin-right: 900px;
+            margin-top: -90px;
+            font-size: large;  
+        }
+        .btn a{
+            margin-left: 190px;
+            margin-right: 900px;
+            width: 150px;
+            text-decoration: none;
+            display: inline-block;
+            border: .5px solid #fff;
+            padding: 12px 0;
+            color: #fff;
+            position: relative;
+            text-align: center;
+            background-color: green;
+            border-radius:10px 20px;
+        }
+        .banner2{
+            background-image:linear-gradient(rgba(4, 104, 10, 0.97),rgba(54, 190, 72, 0.97));
+            background-size: cover;
+            background-repeat: no-repeat;
+            height:130vh;
+            
+        }
+        .text2{
+            font-family:'Times New Roman', Times, serif;
+            padding-top: 80px;
+            text-align: center;
+            margin-left: 170px;
+            margin-right: 170px;
+            padding: 50px;
+            color: #fff;
+        }
+        .text2 h1{
+            font-size: 40px;
+        }
+        .text2 p{
+            font-size: large;
+            font-style: italic;
+        }
+        .gimage{
+            display: grid;
+            grid-template-columns:repeat(4,400px);
+            grid-template-rows:repeat(3,300px);
+            gap: 22px;
+            margin-left: 10%;
+            margin-right: 20%;
+        }
+        .img1{
+            grid-column:1/2;
+            grid-row: 1/2;
+        }
+        #goat{
+            border-radius:15px;
+
+        }
+        .img2{
+            grid-column:2/3;
+            grid-row: 1/2;
+            border-radius: 15px;
+            background-color: #fff;
+            text-align: center;
+            font-size:large;
+        }
+        .img3{
+            grid-column:3/4;
+            grid-row: 1/2;  
+        }
+        #strawberry{
+            border-radius: 15px;
+        }
+        .img4{
+            grid-column:1/2;
+            grid-row: 2/3;
+            background-color: #fff;
+            text-align: center;
+            font-size:large;
+            border-radius: 15px;  
+        }
+        .img5{
+            grid-column:2/3;
+            grid-row: 2/3;
+            border-radius: 15px;
+        }
+        #squash{
+            border-radius: 15px;
+        }
+        .img6{
+            grid-column:3/4;
+            grid-row: 2/3;
+            border-radius: 15px;
+            background-color: #fff;
+            text-align: center;
+            font-size:large;
+        }
+        .banner3{
+            background-image: url(vege2.png);
+            background-color:whitesmoke;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size:40%;
+            height:80vh;
+            margin-top: -24px;
+            z-index:1;
+
+        }
+        .text4{
+            background-color: #fff;
+            height:80vh;
+            margin-left: 45%;
+            margin-right: 7%;
+        }
+        #p4{
+            font-weight: bold;
+            color: rgba(0, 128, 0, 0.781);
+            font-size: x-large;
+            padding-top: 190px;
+            margin-left: 230px;
+         
+        }
+        .text4 h6{
+            font-family: 'Dancing Script', cursive;
+            font-size: 70px;
+            color: rgba(255, 68, 0, 0.811);
+            margin-top: -30px;
+            margin-left: 100px;
+        }
+        #p5{
+            margin-left: 100px;
+            margin-right: 50px;
+            margin-top: -140px;
+            font-size: x-large;
+        }        
+        .btn2 a{
+            margin-left: 100px;
+            margin-top: 20px;
+            padding: 12px 0;
+            width: 150px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            text-align: center;
+            background-color: rgba(255, 68, 0, 0.811);
+            border-radius:10px 20px;
+        }
+        .otherbanner4{
+            margin-top: -12px;
+            height: 57vh;
+            background-image:linear-gradient(rgba(4, 104, 11, 0.811),rgba(54, 190, 72, 0.97));
+            background-size: 40%;
+        }
+        .text5{
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            margin-left: 170px;
+            margin-right: 170px;
+            padding: 5px;
+            color: #fff;
+        }
+        .text5 h4{
+            font-size: 50px;
+        }
+        .text5 p{
+            font-size: larger;
+            font-style: italic;
+            margin-top: -50px;
+            padding: 20px;
+        }
+        .gtext{
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 20px;
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+        .gtext div{ 
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+            background-color: #fff;
+            text-align: left;
+            margin-right: 25px;
+        }
+        .gtext div h3{ 
+            color: rgba(4, 104, 11, 0.811);
+        }
+        .gtext div p{
+            font-size:large;
+        }
+        .fimage1{
+            margin-top: -1px;
+            background-color: rgba(145, 137, 137, 0.175);
+            height:30vh;
+        }
+        .fimage2 {
+            margin-top:-1px;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+        .fimage2 img{
+            background-color: #fff;
+            text-align: left;
+            margin-right: 25px;
+        }
+        .banner5{
+            background-image: url(cow.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size:50%;
+            height:70vh;
+            margin-top: -25px;
+        }
+        .text6{
+            background-color: #fff;
+            height:70vh;
+            margin-left: 50%;
+            margin-right: 6%;
+        }
+        #p6{
+            font-weight: bold;
+            color: rgb(0, 128, 0);
+            font-size: x-large;
+            padding-top: 90px;
+            margin-left: 250px;
+        }
+        .text6 h4{
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            color: rgba(255, 68, 0, 0.947);
+            margin-top:-30px ;
+            margin-left: 160px;
+        }
+        #p7{
+            margin-left: 160px;
+            margin-right: 50px;
+            font-style: italic;
+            line-height: 1.4;
+            font-size: larger;
+            margin-top: -60px;
+        }        
+        .btn3 a{
+            margin-left: 160px;
+            margin-top: 10px;
+            padding: 12px 0;
+            width: 150px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            text-align: center;
+            background-color: rgb(255, 68, 0);
+            border-radius:10px 20px;
+        }
+        .banner6{
+            background-color: whitesmoke;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            height:80vh;
+        }
+        .fimage4{
+            display: flex;
+            margin-top:-1px;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+        .fimage4 div{
+            background-color: #fff;
+            text-align: center;
+            margin-top: 50px;
+            margin-right: 25px;
+            padding-top: 50px;
+            color: black;
+            padding-bottom: 80px;
+        }
+        .fimage4 div img {
+            border-radius: 50%;
+        }
+        figcaption{
+            font-size: xx-large;
+        }
+        .fimage4 div p{
+          font-size: large;
+          margin-right: 35px;
+          margin-left: 35px;
+        }
+        .fimage4 div a{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            text-decoration: underline;
+        }
+        .banner7{
+            background-image: url(temo3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size:50%;
+            background-position: right;
+            height:75vh;
+        }
+        .text7{
+            background-color: #fff;
+            height:75vh;
+            margin-right: 50%;
+            margin-left: 4%;
+        }
+        #p8{
+            font-weight: bold;
+            color: rgb(0, 128, 0);
+            font-size: x-large;
+            padding-top: 90px;
+            margin-left: 150px;
+        }
+        .text7 h4{
+            font-family: 'Dancing Script', cursive;
+            font-size: 70px;
+            color: rgba(255, 68, 0, 0.947);
+            margin-top:-20px ;
+            margin-left: 160px;
+        }
+        #p9{
+            margin-left: 160px;
+            margin-right: 50px;
+            font-style: oblique;
+            line-height: 1.7;
+            font-size: large;
+            margin-top: -60px;
+        }        
+        .btn4 a{
+            margin-left: 160px;
+            margin-top: 10px;
+            padding: 12px 0;
+            width: 150px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            text-align: center;
+            background-color: rgb(255, 68, 0);
+            border-radius:10px 20px;
+        }
+        .banner8{
+            background-image:url(gress.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size:55%;
+            background-position: right;
+            height:75vh;
+        }
+        .mapouter{
+            position:relative;
+            text-align:right;
+            margin-right: 55%;
+        }
+        .gmap_iframe {
+            height:75vh;
+        }
+        footer{
+            background-color: rgba(88, 95, 93, 0.473);
+            height: 20vh;
+            color: rgb(41, 40, 38);
+            text-align: center;
+            padding-top: 90px;
+            font-size: large;
+        }
+        .foot label{
+            font-weight: bold;
+        }
+        .foot a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header id="logo">
+        <img src="https://images01.nicepage.com/f4/d4/f4d4da86ac71e8f618a6a46621ce6d05.png" alt="logo" height="77px" width="255px">
+        <div id="menu">
+            <img src="data:image/png;base64,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" alt="menu" id="menu2">
+        </div>
+    </header>
+        <!-- banner1 -->
+        <section class="banner1">
+        <div class="bimage">
+                <p id="p1">FRESH FOOD</p>
+               <h1>Organic</h1>
+                <p id="p2"><i>How your food is grown or raised can have a major impact on your mental and emotional health as well as the environment.</i></p>
+                <div class="btn">
+                    <a href="#">LEARN MORE</a>
+                </div>
+               </div>   
+        </section>
+        <!-- banner2 -->
+        <section class="banner2">
+            <div class="text2">
+                <h1>How It Works?</h1>
+                <p> Organic agriculture, which is governed by strict government standards, requires that products bearing the organic label are produced without the use of toxic and persistent pesticides and synthetic nitrogen fertilizers, antibiotics, synthetic hormones, genetic engineering or other excluded practices, sewage sludge, or irradiation.</p>            
+            </div>
+            <div class="gimage">
+                <!-- first -->
+                
+                <div class="img1"><img id="goat" src="https://www.merkezdistic.com/wp-content/uploads/2020/09/sheep-green-grass_1385-373.jpg" alt="goat" width="400px" height="300px"></div>
+                <!-- second -->
+                <div  class="img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQ-grc4bDGYP1irhw28ok5jQUJU4goYRDbQ&usqp=CAU" height="50px">
+                    <h1>Organic Farming</h1>
+                    <p>Organic farming practices reduce pollution, conserve water, reduce soil erosion, increase soil fertility, and use less energy, is also better for birds</p>
+                    </div>
+                    <!-- third -->
+                <div  class="img3"><img id="strawberry" src="https://cropscience.bayer.co.uk/media/103560256/strawberry-header.jpg"alt="strawberry"width="400px" height="300px"></div>
+                <!-- forth -->
+                <div  class="img4"><img src="https://i.pinimg.com/originals/bc/3a/f3/bc3af33b2ddcdce284dd1be96910daf2.jpg" height="80px">
+                    <h1>Animal husbandry</h1>
+                    <p>The animal production system, may be broadly classified as traditional, conventional and organic with their distinct characteristics.</p>
+                </div>
+            <!-- five -->
+                <div  class="img5"><img id="squash" src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/pumpkins-squash-gourds-in-wooden-box-jenny-rainbow.jpg"="//render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/pumpkins-squash-gourds-in-wooden-box-jenny-rainbow.jpg"alt="squash"width="400px" height="300px"> </div>
+                <!-- six -->
+                <div  class="img6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz0fGDSpL76dMJ_SGr08Oe5YspdkKA7OBH2FlTXzUEBumwO8WN80cw7d42oUcIp6cCejs&usqp=CAU" height="100px">
+                    <h1>Arable Farming</h1>
+                    <p>Organic foods often have more beneficial nutrients, such as antioxidants, than their conventionally-grown counterparts and people with allergies to foods</p>
+        </div>
+
+                </div>
+        </section>
+        <!-- banner3 -->
+        <section class="banner3">
+            <div class="text4">
+                <p id="p4">ORGANIC FARM</p>
+               <h6>Our Promise</h6>
+                <p id="p5"><i>We bring the season's best mix of organic produce and hand-crafted farm products conveniently to your door by growing and partnering with local farms and artisans in your area.</i></p>
+                <div class="btn2">
+                    <a href="#">LEARN MORE</a>
+                </div>
+               </div>  
+        </section>
+        <!-- other banner -->
+        <section class="otherbanner4">
+        <div class="text5">
+            <h4>About Our Farm</h4>
+            <p>Today, at our second-generation family farm, we keep with our parents'vision by practicing healthy crop rotation, encouraging a diverse ecosystem around the fields, efficiently using local water sources and carefully selecting produce varieties that grow well and taste great.</p>
+        </div>
+        <div class="gtext">
+            <div ><h3>VEGETABLES</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </div>
+            <div><h3>HOW IT WORKS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </div>
+            <div><h3>FLEXIBILITY</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </div>
+            <div ><h3>FARM PRODUCTS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </div>
+        </div>
+        <div class="fimage1">
+            <div class="fimage2">
+                <img src="temo1.jpg" alt="tomato1" width="267px" height="180px">
+                <img src="seedpl.jpg" alt="seedplant" width="267px" height="180px">
+                <img src="ko.jpg"alt="kothamalli" width="267px" height="180px">
+                <img src="farm-product.png" alt="tomato1" width="267px" height="180px">
+            </div>
+        </div>
+        <!-- banner5 -->
+        <section class="banner5">
+            <div class="text6">
+                <p id="p6">HAPPY FARMING</p>
+                <h4>Happy Animals</h4>
+                <p id="p7">The idea that happier farm animals produce higher quality food is not new, and it seems to be catching on. Several small scale egg farmers have transitioned to a “pastured” system, allowing their chickens to roam freely to eat grass and bugs the way nature intended. These chickens are not simply “free range” or “cage free,” which are terms that unfortunately don't have much meaning in today's food market</p>
+                <div class="btn3">
+                    <a href="#">LEARN MORE</a></div>
+            </div>
+        </section>
+        <!-- banner6 -->
+        <section class="banner6">
+            <div class="fimage4">
+            <div class="fimg11">
+                    <img id="fimg1" src="str3.jpg"  alt="fimg"  width="200px" height="200px">
+                    <figcaption>Fresh Fruits</figcaption>
+                    <p>The secret is using fresh, seasonal produce in combination with good quality oils, vinegars or dairy. We choose the organic lifestyle because</p>
+                    <a href="#">LEARN MORE</a></div>
+            <div class="fimg12">
+                    <img id="fimg1" src="vegetarian-evolution-1.jpg"  alt="fimg"  width="200px" height="200px">
+                    <figcaption>Vegetables</figcaption>
+                    <p>We have all been listening to our mothers saying: eat your vegetables. Scientists also agree: we need to eat 5 portions of vegetables to stay healthy.</p>
+                    <a href="#">LEARN MORE</a></div>
+            <div class="fimg13">
+                    <img id="fimg1" src="le.jpg"  alt="fimg" width="200px" height="200px">
+                    <figcaption>Salad Leaves</figcaption>
+                    <p>One way to motivate yourself to eat more salad this summer is to have a tasty, homemade dressing drizzled on top. Organic food popularity.</p>
+                    <a href="#">LEARN MORE</a></div>
+            </div>
+        </section>
+        <!-- banner7 -->
+        <section class="banner7">
+            <div class="text7">
+                <p id="p8">ORGANIC FARM</p>
+                <h4>Of Organic Food</h4>
+                <p id="p9">Organic principles and regulations are also designed to ensure that animals are treated humanely, or, to be brutally honest, as humanely as possible.<br>
+                    There are strict rules on the way in which animals are housed, guaranteeing a degree of comfort for the animals. But when it comes to vegetables, the situation is quite different.</p>
+                <div class="btn4">
+                    <a href="#">LEARN MORE</a></div>
+            </div>
+        </section>
+        <!-- banner8 -->
+        <section class="banner8">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" width="100%" src="https://maps.google.com/maps?width=1134&amp;height=637&amp;hl=en&amp;q=Koramangala Indoor Stadium Park WJVF+65X, Indoor Stadium, KHB Games Village, Koramangala, Bengaluru, Karnataka 560047&amp;t=&amp;z=20&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                      </div>
+                    </div>
+        </section>
+    <!-- footer -->
+        <footer>
+            <div class="foot">
+            <a href="#">Website Templates</a><label> Created By </label>  <a href="https://github.com/NANDHUEngineer">Nandhu</a><label>&copy 2023</label>
+        </div>
+        </footer>
+        </section>
+</body>
+</html>
